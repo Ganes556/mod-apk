@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.gms.ads.AdView android:layout_gravity="top" android:id="@id/AdView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" app:adSize="BANNER" app:adUnitId="@string/IdAdmobNews" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/parentLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="30.0">
+            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/leftLayout" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      xmlns:android="http://schemas.android.com/apk/res/android">
+                        <ProgressBar android:id="@id/circularProgressBar" android:layout_width="110.0dip" android:layout_height="110.0dip" android:max="40" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/progressbar" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+                        <TextView android:textSize="22.0dip" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="33" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="9.0dip" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max = 40" android:layout_below="@id/textView1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@id/imgSeparator1" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="10.0sp" android:id="@id/benar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Benar: " />
+                <ImageView android:id="@id/imgSeparator2" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/angkabenar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="43" />
+                <ImageView android:id="@id/imgSeparator3" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="10.0sp" android:id="@id/salah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Salah: " />
+                <ImageView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/angkasalah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="7" />
+                <ImageView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="10.0sp" android:id="@id/blank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tidak diisi: " />
+                <ImageView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/angkablank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="0" />
+                <ImageView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/buttonLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:layout_gravity="center_horizontal" android:id="@id/tryButton" android:background="@drawable/tryagain" android:layout_width="82.0dip" android:layout_height="82.0dip" android:layout_marginBottom="10.0dip" android:onClick="gotoTest" />
+                    <Button android:layout_gravity="center_horizontal" android:id="@id/homeButton" android:background="@drawable/home" android:layout_width="82.0dip" android:layout_height="82.0dip" android:layout_margin="2.0dip" android:layout_marginBottom="10.0dip" android:onClick="gotoHome" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/verticalseparator" android:background="@color/separator" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="70.0">
+            <ImageView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jawaban Anda: " />
+            <ImageView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="5.0dip" />
+            <LinearLayout android:layout_gravity="right" android:id="@id/rightlayout" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

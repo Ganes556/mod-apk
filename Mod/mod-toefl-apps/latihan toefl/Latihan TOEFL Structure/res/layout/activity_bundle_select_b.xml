@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/l1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="90.0">
+            <TextView android:textSize="30.0dip" android:textColor="#ff9065c7" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="Part B:" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/sub_container_2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:background="#ffb594df" android:layout_width="15.0dip" android:layout_height="12.0dip" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff838383" android:id="@id/header1" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="1.0dip" android:text="Pilih Paket Soal" />
+                <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/persegi" android:background="#ffb594df" android:layout_width="320.0dip" android:layout_height="12.0dip" />
+            </LinearLayout>
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView android:layout_gravity="top" android:id="@id/AdView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="0.0" app:adSize="BANNER" app:adUnitId="@string/IdAdmobNews" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</LinearLayout>

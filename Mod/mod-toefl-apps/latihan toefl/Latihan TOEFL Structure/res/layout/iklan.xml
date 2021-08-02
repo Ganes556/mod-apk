@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="90.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageView1" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/home" />
+            <LinearLayout android:orientation="vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:textSize="20.0dip" android:id="@id/nameApp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Latihan TOEFL Structure" />
+                <TextView android:id="@id/studio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Paprika Studio" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+            <ScrollView android:id="@id/sclDetail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+                <WebView android:textSize="14.0sp" android:id="@id/app_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button_back" android:background="@drawable/close_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="3.0dip" android:layout_weight="0.0">
+            <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/header2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Close" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

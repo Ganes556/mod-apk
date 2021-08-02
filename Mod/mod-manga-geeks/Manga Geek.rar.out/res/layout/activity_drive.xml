@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/file_title_edittext" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true" />
+    <EditText android:id="@id/doc_content_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_layout" android:layout_below="@id/file_title_edittext" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@id/open_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Open" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+        <Button android:id="@id/create_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Create" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+        <Button android:id="@id/save_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Save" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+        <Button android:id="@id/query_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Query" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

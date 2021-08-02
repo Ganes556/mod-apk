@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<APKEasyTool xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SelectedPathMain />
+  <SelectedDexOdexOat />
+  <SelectedSmali />
+  <PathDec>F:\Tool Apk\apktool fix\easy apktools\1-Decompiled APKs</PathDec>
+  <PathCom>F:\Tool Apk\apktool fix\easy apktools\2-Recompiled APKs</PathCom>
+  <PathExt>F:\Tool Apk\apktool fix\easy apktools\3-Extracted APKs</PathExt>
+  <PathZip>F:\Tool Apk\apktool fix\easy apktools\4-Zipped APKs</PathZip>
+  <PathBaksmali>F:\Tool Apk\apktool fix\easy apktools\5-Baksmali</PathBaksmali>
+  <PathSmali>F:\Tool Apk\apktool fix\easy apktools\6-Smali</PathSmali>
+  <PathPem>F:\Tool Apk\apktool fix\easy apktools\Resources\apkeasytool.pem</PathPem>
+  <PathPk8>F:\Tool Apk\apktool fix\easy apktools\Resources\apkeasytool.pk8</PathPk8>
+  <PathJksFile />
+  <PathTempDec />
+  <PathTempFw />
+  <PathTempFw2 />
+  <PathFw />
+  <PathJava />
+  <FileNameDec />
+  <FileNameCom />
+  <FileNameDexOdexOat />
+  <FileNameSmali />
+  <DropDownApkTool>apktool_2.3.4.jar</DropDownApkTool>
+  <DropDownApkSign>Apksigner (Default)</DropDownApkSign>
+  <DropDownLogLevel>Warn &amp; Error only (Default)</DropDownLogLevel>
+  <DropDownCmdMode>WriteLine (Recommended)</DropDownCmdMode>
+  <DwordX>335</DwordX>
+  <DwordY>71</DwordY>
+  <DwordXmx>1024</DwordXmx>
+  <CheckBoxDecB>false</CheckBoxDecB>
+  <CheckBoxDecF>true</CheckBoxDecF>
+  <CheckBoxDecK>false</CheckBoxDecK>
+  <CheckBoxDecM>false</CheckBoxDecM>
+  <CheckBoxDecR>false</CheckBoxDecR>
+  <CheckBoxDecS>false</CheckBoxDecS>
+  <CheckBoxDecNC>false</CheckBoxDecNC>
+  <CheckBoxComC>false</CheckBoxComC>
+  <CheckBoxComD>false</CheckBoxComD>
+  <CheckBoxComF>true</CheckBoxComF>
+  <CheckBoxComNC>false</CheckBoxComNC>
+  <CheckBoxComAapt2>false</CheckBoxComAapt2>
+  <CheckBoxZipF>false</CheckBoxZipF>
+  <CheckBoxZipP>false</CheckBoxZipP>
+  <CheckBoxZipZ>false</CheckBoxZipZ>
+  <CheckBoxZipV>false</CheckBoxZipV>
+  <CheckBoxShellExt>false</CheckBoxShellExt>
+  <CheckBoxEnaLog>true</CheckBoxEnaLog>
+  <CheckBoxUseJks>false</CheckBoxUseJks>
+  <CheckBoxSignApk>true</CheckBoxSignApk>
+  <CheckBoxInstallApk>false</CheckBoxInstallApk>
+  <CheckBoxOverApk>false</CheckBoxOverApk>
+  <CheckBoxZipAfterSign>false</CheckBoxZipAfterSign>
+  <CheckBoxToolTips>true</CheckBoxToolTips>
+  <CheckBoxChkUpdate>true</CheckBoxChkUpdate>
+  <CheckBoxWinPos>false</CheckBoxWinPos>
+  <CheckBoxRememberPass>false</CheckBoxRememberPass>
+  <CheckBoxDisHistory>false</CheckBoxDisHistory>
+  <CheckBoxDisComMsgBox>false</CheckBoxDisComMsgBox>
+  <CheckBoxUseExtJava>false</CheckBoxUseExtJava>
+  <CheckBoxReadApk>false</CheckBoxReadApk>
+  <CheckBoxReplaceSpace>false</CheckBoxReplaceSpace>
+  <AskToSetupDir>false</AskToSetupDir>
+  <isSidedLogOpened>false</isSidedLogOpened>
+  <isReset>false</isReset>
+  <DecApiLvl />
+  <ComApiLvl />
+  <ReplaceWithSpace>false</ReplaceWithSpace>
+  <CheckBoxTaskBar>true</CheckBoxTaskBar>
+  <Language>English (Default)</Language>
+</APKEasyTool>

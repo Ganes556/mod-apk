@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pay_root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/mature_warning_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" app:srcCompat="@drawable/ic_close" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginTop="16.0dip" app:srcCompat="@mipmap/ic_launcher_round" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/title" android:gravity="center" android:layout_gravity="center_horizontal" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/mature_warning" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/go" android:background="@drawable/mature_warning_bg" android:padding="8.0dip" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="CONTINUE" />
+        <CheckBox android:textSize="@dimen/sp_12" android:textColor="@color/title" android:layout_gravity="center" android:id="@id/showAgain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="Don't show this warning again" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cv_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="1.0dip" card_view:cardBackgroundColor="@color/statistik_normal" card_view:cardPreventCornerOverlap="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/putih" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/test" />
+            <TextView android:textSize="28.0sp" android:textColor="@color/putih" android:gravity="center" android:id="@id/nomor_paket" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:text="01" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/putih" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/putih_biru_btn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/garis_abu2" android:gravity="start|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:text="Part B" android:maxLines="2" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/statistik_normal" android:gravity="start|center" android:id="@id/nama_paket" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:text="COUNTABLE / UNCOUNTABLE NOUNS" android:maxLines="2" />
+                <ImageView android:id="@id/imgSeparator2" android:background="@color/stat_back_klik" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="5.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="8.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/statistik_normal" android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="@string/best" android:maxLines="1" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/statistik_normal" android:gravity="start|center" android:id="@id/nilai_test" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:maxLines="1" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/statistik_normal" android:gravity="start|center" android:id="@id/jumlah_soal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/delapan" android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

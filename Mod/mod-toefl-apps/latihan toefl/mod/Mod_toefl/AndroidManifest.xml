@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="id.paprikastudio.latihantoeflstructure" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@drawable/icon_structure" android:label="@string/app_name" android:name="id.paprikastudio.latihantoeflstructure.App" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-8071725374187869~8803837439"/>
+        <meta-data android:name="applovin.sdk.key" android:value="t31fP6oJbK2_GUioDs-827DAfBUyh_QGgataH_0pTrK55lzW9GXGKC76EI11qeABUbN2Nu8LrvuWudJl1QG7Ws"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:label="@string/app_name" android:name="id.paprikastudio.latihantoeflstructure.Splashscreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HomeScreen" android:screenOrientation="portrait"/>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanWords" android:screenOrientation="portrait"/>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.Start" android:parentActivityName="id.paprikastudio.latihantoeflstructure.HomeScreen" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.HomeScreen"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PilihMateri" android:parentActivityName="id.paprikastudio.latihantoeflstructure.Start" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.Start"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PilihMateriDetail" android:parentActivityName="id.paprikastudio.latihantoeflstructure.PilihMateri" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.PilihMateri"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.MateriPenjelasan" android:parentActivityName="id.paprikastudio.latihantoeflstructure.PilihMateriDetail" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.PilihMateriDetail"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.TableOfContent" android:parentActivityName="id.paprikastudio.latihantoeflstructure.Start" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.Start"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.MateriDetails" android:parentActivityName="id.paprikastudio.latihantoeflstructure.TableOfContent" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.TableOfContent"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.LatihanMateri" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PartSelection" android:parentActivityName="id.paprikastudio.latihantoeflstructure.HomeScreen" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.HomeScreen"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PilihPaketSoalLatihanPartA" android:screenOrientation="portrait"/>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PilihPaketSoalLatihanPartB" android:screenOrientation="portrait"/>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanSoalA" android:parentActivityName="id.paprikastudio.latihantoeflstructure.BundleSelectA" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.BundleSelectA"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanSoalB" android:parentActivityName="id.paprikastudio.latihantoeflstructure.BundleSelectB" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.BundleSelectB"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanSoal2Opsi" android:parentActivityName="id.paprikastudio.latihantoeflstructure.LatihanMateri" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.LatihanMateri"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanSoalwInputText" android:parentActivityName="id.paprikastudio.latihantoeflstructure.LatihanMateri" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.LatihanMateri"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanSoalMultipleAnswers" android:parentActivityName="id.paprikastudio.latihantoeflstructure.LatihanMateri" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.LatihanMateri"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanTest" android:screenOrientation="portrait"/>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PartA_Start" android:parentActivityName="id.paprikastudio.latihantoeflstructure.HomeScreen" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.HomeScreen"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PilihPaketSoalTestA" android:parentActivityName="id.paprikastudio.latihantoeflstructure.PartA_Start" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.PartA_Start"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PilihPaketSoalTestB" android:parentActivityName="id.paprikastudio.latihantoeflstructure.PartB_Start" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.PartB_Start"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.PartB_Start" android:parentActivityName="id.paprikastudio.latihantoeflstructure.HomeScreen" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.HomeScreen"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanTest_Part_A" android:parentActivityName="id.paprikastudio.latihantoeflstructure.PartA_Start" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.PartA_Start"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanTest_Part_A_Random" android:parentActivityName="id.paprikastudio.latihantoeflstructure.PartA_Start" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.PartA_Start"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanTest_Part_B" android:parentActivityName="id.paprikastudio.latihantoeflstructure.PartB_Start" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.PartB_Start"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.HalamanTest_Part_B_Random" android:parentActivityName="id.paprikastudio.latihantoeflstructure.HomeScreen" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.HomeScreen"/>
+        </activity>
+        <activity android:name="id.paprikastudio.latihantoeflstructure.Result" android:parentActivityName="id.paprikastudio.latihantoeflstructure.HomeScreen" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="id.paprikastudio.latihantoeflstructure.HomeScreen"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.inmobi.rendering.InMobiAdActivity" android:resizeableActivity="false" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.applovin.adview.AppLovinInterstitialActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.applovin.sdk.AppLovinWebViewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.applovin.mediation.MaxDebuggerActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <service android:exported="false" android:name="com.applovin.impl.sdk.utils.AppKilledService" android:stopWithTask="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="id.paprikastudio.latihantoeflstructure.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="id.paprikastudio.latihantoeflstructure.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="8"/>
+    </application>
+</manifest>

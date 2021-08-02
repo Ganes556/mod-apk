@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="2.0dip" card_view:cardElevation="1.0dip" card_view:cardUseCompatPadding="true" card_view:elevation="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.base.ui.widget.AspectRatioImageView android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="@dimen/comic_item_height" android:scaleType="centerCrop" android:elevation="1.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:background="@color/trans_dark_black" android:layout_width="fill_parent" android:layout_height="36.0dip" android:maxLines="1" android:layout_alignBottom="@id/cover" android:elevation="1.0dip" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

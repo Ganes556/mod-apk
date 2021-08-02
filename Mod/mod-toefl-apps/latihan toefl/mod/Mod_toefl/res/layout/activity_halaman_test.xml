@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:layout_gravity="center_horizontal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/l1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="48.0">
+            <ImageView android:id="@id/imgSeparator1" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                <TextView android:textSize="22.0sp" android:gravity="left" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Soal No. " />
+                <TextView android:textSize="22.0sp" android:layout_gravity="left" android:id="@id/no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="22.0sp" android:gravity="right" android:id="@id/textViewTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="TIMER" />
+            </LinearLayout>
+            <ImageView android:id="@id/imgSeparator2" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <ScrollView android:id="@id/sclDetail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:fadeScrollbars="true">
+                <TextView android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/pertanyaan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="5.0dip" android:lineSpacingExtra="10.0dip" />
+            </ScrollView>
+        </LinearLayout>
+        <ImageView android:id="@id/imgSeparator3" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_above="@id/radioGroup1" />
+        <LinearLayout android:orientation="vertical" android:id="@id/l2" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="55.0" android:layout_below="@id/imgSeparator3">
+            <ScrollView android:id="@id/sclDetail2" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:layout_gravity="bottom" android:id="@id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/imgSeparator3" android:layout_below="@id/textView1" android:layout_alignLeft="@id/textView1">
+                        <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioA" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                        <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                        <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                        <RadioButton android:textSize="18.0sp" android:id="@id/radioE" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <ImageView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/BottomButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.0">
+            <Button android:id="@id/PrevButton" android:background="@drawable/about" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_margin="2.0dip" android:onClick="prevSoal" />
+            <Button android:id="@id/NextButton" android:background="@drawable/next" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_margin="2.0dip" android:onClick="nextSoal" />
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView android:layout_gravity="top" android:id="@id/AdView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" app:adSize="BANNER" app:adUnitId="@string/IdAdmobNews" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</RelativeLayout>

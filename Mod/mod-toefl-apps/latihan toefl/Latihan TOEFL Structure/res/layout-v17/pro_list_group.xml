@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff0096d5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/sub_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/persegi" android:layout_width="30.0dip" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/detail" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+                <TextView android:textColor="#ff0096d5" android:id="@id/materi_toefl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="Materi TOEFL" android:layout_marginStart="10.0dip" />
+                <TextView android:textSize="20.0sp" android:textColor="#ff0096d5" android:id="@id/lblListHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:text="PROBLEM WITH VERBS" android:maxLines="2" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

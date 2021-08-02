@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:layout_gravity="center_horizontal" android:background="@color/putih" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <ViewFlipper android:id="@id/viewflipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:id="@id/l1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="48.0">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/formula" android:background="@color/header1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/soalno_text" android:layout_width="90.0dip" android:layout_height="26.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="1.0dip" android:text="Soal No :" android:layout_marginStart="8.0dip" />
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/no" android:layout_width="30.0dip" android:layout_height="26.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="2.0dip" android:text="1" android:layout_marginStart="3.0dip" />
+                    <TextView android:textSize="16.0sp" android:layout_gravity="start" android:id="@id/blank" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <ImageView android:id="@id/imgSeparator1" android:background="@color/header1" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <ScrollView android:id="@id/sclDetail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/pertanyaan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="5.0dip" android:lineSpacingExtra="10.0dip" />
+                </ScrollView>
+            </LinearLayout>
+            <ImageView android:id="@id/imgSeparator3" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="55.0">
+                <ScrollView android:id="@id/sclDetail2" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RadioGroup android:layout_gravity="bottom" android:id="@id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                            <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioA" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                            <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                            <RadioButton android:textSize="18.0sp" android:textColor="@color/header4" android:id="@id/radioD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                            <RadioButton android:textSize="18.0sp" android:id="@id/radioE" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <ImageView android:id="@id/imgSeparator4" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <com.google.android.gms.ads.AdView android:layout_gravity="top" android:id="@id/AdView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" app:adSize="BANNER" app:adUnitId="@string/IdAdmobNews" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/BottomButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="0.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_button_next" android:background="@drawable/color_button_orange" android:clickable="true" android:layout_width="144.0dip" android:layout_height="72.0dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="0.0dip" android:layout_marginStart="2.0dip">
+                    <LinearLayout android:gravity="start|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textColor="#fffffeff" android:id="@id/button_next_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:text="Next" android:layout_marginStart="6.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                        <ImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/next_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/container_utama" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/part_1" android:background="@color/tombol_klik" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="6.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/putih" android:gravity="center" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:text="iklan" />
+                <TextView android:textSize="16.0sp" android:layout_gravity="start" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/iklan_paprika" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/internet_on" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.gms.ads.NativeExpressAdView android:layout_gravity="center_horizontal" android:id="@id/NatAdView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" ads:adSize="340x360" ads:adUnitId="@string/NativeAdMob_Large" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/internet_off" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/iklan_pts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="9.0sp" android:textColor="@color/putih" android:background="@color/orange_normal" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text=" Ad " android:layout_marginStart="6.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@drawable/pts_nat_large" android:layout_width="340.0dip" android:layout_height="196.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="340.0dip" android:layout_height="120.0dip">
+                            <LinearLayout android:orientation="vertical" android:layout_width="260.0dip" android:layout_height="120.0dip">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="85.0dip" android:layout_height="fill_parent">
+                                        <ImageView android:layout_gravity="center" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icon_pts" />
+                                    </LinearLayout>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="175.0dip" android:layout_height="fill_parent">
+                                        <TextView android:textSize="15.0sp" android:textStyle="bold" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pts" android:layout_weight="1.0" />
+                                        <TextView android:textSize="12.0dip" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip" android:text="@string/ps" android:layout_weight="1.0" />
+                                        <RatingBar android:theme="@style/RatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:numStars="5" android:rating="4.0" style="?android:ratingBarStyleSmall" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip" android:text="Download versi Pro dari Latihan TOEFL Structure. Bebas iklan, dan materi lengkap" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="80.0dip" android:layout_height="fill_parent">
+                                <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                                <LinearLayout android:id="@id/install_pts" android:background="@drawable/install_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+                                    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/putih" android:gravity="center" android:id="@id/tv_install_pts" android:background="@drawable/install_button" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/install" android:layout_marginStart="0.0dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/part_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" android:baselineAligned="false" android:layout_weight="0.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_button_buy" android:background="@drawable/buy_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:layout_marginEnd="4.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="60.0dip" android:layout_height="70.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/buy_icon" />
+                    </LinearLayout>
+                    <TextView android:textSize="20.0dip" android:textColor="@color/putih" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="2.0dip" android:text="BUY TOEFL PRO" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/skip_normal" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="0.0dip" android:layout_weight="2.0">
+                    <TextView android:textSize="22.0sp" android:gravity="center" android:id="@id/timer" android:background="@color/tombol_klik" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="TIMER" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/putih" android:gravity="center" android:id="@id/button_skip" android:background="@drawable/skip_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="0.0dip" android:text="SKIP >>" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffdfded9" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:background="#ffff911a" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="25.0dip">
+                        <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="S C O R E" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/Ring" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ProgressBar android:id="@id/circularProgressBar" android:layout_width="220.0dip" android:layout_height="220.0dip" android:max="10" android:progress="8" android:indeterminate="false" android:progressDrawable="@drawable/progressbar_latihan_materi" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+                            <TextView android:textSize="50.0dip" android:id="@id/total_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="330" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                            <TextView android:textSize="12.0dip" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max = 40" android:layout_below="@id/total_score" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/benar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="30.0sp" android:id="@id/tv_benar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" />
+                            <TextView android:textSize="12.0sp" android:id="@id/tv_angka_benar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="BENAR" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/salah" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="30.0sp" android:id="@id/tv_salah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" />
+                            <TextView android:textSize="12.0sp" android:id="@id/tv_angka_salah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="SALAH" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lewat" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="30.0sp" android:id="@id/tv_lewat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+                            <TextView android:textSize="12.0sp" android:id="@id/tv_angka_lewat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="LEWAT" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_button_details" android:background="@drawable/try_again_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="18.0sp" android:id="@id/tv_button_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SEE DETAILS" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffdfded9" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:id="@id/parentLayout" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="90.0">
+                <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Jawaban Anda: " />
+                <ImageView android:id="@id/imgSeparator2" android:background="#ffdfded9" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginRight="5.0dip" />
+                <LinearLayout android:id="@id/rightlayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="#ffdfded9" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="2.0dip" android:layout_weight="0.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_button_score" android:background="@drawable/try_again_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SCORE" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_button_menu" android:background="@drawable/try_again_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MENU" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_button_retry" android:background="@drawable/try_again_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="1.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RETRY" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ViewFlipper>
+</RelativeLayout>

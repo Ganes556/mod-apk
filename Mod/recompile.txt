@@ -1,0 +1,6 @@
+# recompile 
+java -jar ../apktool.jar b -r -d mod.apk -o mod2.apk
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore mod.apk my-key
+jarsigner -verify -verbose -certs mod.apk
+zipalign -v 4 mod.apk mod2.apk
+

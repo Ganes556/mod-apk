@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <dimen name="activity_horizontal_margin">5.0dip</dimen>
+    <dimen name="comic_item_height">250.0dip</dimen>
+    <dimen name="comic_item_title_max_width">150.0dip</dimen>
+</resources>

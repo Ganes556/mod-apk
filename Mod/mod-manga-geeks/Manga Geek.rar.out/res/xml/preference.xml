@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/common_settings">
+        <Preference android:title="@string/backup" android:key="BACKUP" />
+        <Preference android:title="@string/theme_color" android:key="CHANGE_THEME" />
+        <Preference android:title="@string/feedback" android:key="FEEDBACK" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_read">
+        <ListPreference android:entries="@array/reading_mode_entries" android:title="@string/reading_mode" android:key="READ_MODE" android:summary="%s" android:defaultValue="1" android:dialogTitle="@string/select_read_mode" android:negativeButtonText="@string/cancel" android:entryValues="@array/reading_mode_entry_values" />
+        <ListPreference android:entries="@array/reading_direction_entries" android:title="@string/settings_read_reading_direction" android:key="READ_ORI" android:summary="%s" android:defaultValue="1" android:dialogTitle="@string/select_reading_direction" android:negativeButtonText="@string/cancel" android:entryValues="@array/reading_direction_entry_values" />
+        <ListPreference android:entries="@array/screen_rotation_entries" android:title="@string/settings_read_screen_rotation" android:key="SCREEN_ORI" android:summary="%s" android:defaultValue="-1" android:dialogTitle="@string/select_screen_rotation" android:negativeButtonText="@string/cancel" android:entryValues="@array/screen_rotation_entry_values" />
+        <CheckBoxPreference android:title="@string/load_pre_chapter" android:key="LOAD_PRE" android:summary="@string/when_first_page" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/load_next_chapter" android:key="LOAD_NEXT" android:summary="@string/when_lastest_page" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/show_page_margin" android:key="USE_MARGIN" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/crop_big_image" android:key="CROP_BIG_IMG" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/scroll_by_click">
+        <ListPreference android:entries="@array/screen_touch_control" android:title="@string/click_left_region_of" android:key="SCREEN_LEFT" android:summary="%s" android:defaultValue="1" android:dialogTitle="@string/click_to_scroll" android:negativeButtonText="@string/cancel" android:entryValues="@array/screen_touch_control_value" />
+        <ListPreference android:entries="@array/screen_touch_control" android:title="@string/click_right_region_of" android:key="SCREEN_RIGHT" android:summary="%s" android:defaultValue="2" android:dialogTitle="@string/click_to_scroll" android:negativeButtonText="@string/cancel" android:entryValues="@array/screen_touch_control_value" />
+        <SwitchPreference android:title="@string/scroll_by_volume_keys" android:key="VOlUME_KEY" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Live Wallpaper">
+        <SwitchPreference android:title="@string/video_voice" android:key="KEY_OF_VOICE" android:defaultValue="true" android:summaryOn="@string/voice" android:summaryOff="@string/voice_off" />
+        <SwitchPreference android:title="@string/quick_control" android:key="SHORT_CUT" android:defaultValue="false" android:summaryOn="@string/tap_screen_to_control_voice" android:summaryOff="@string/energy_saving" />
+        <Preference android:title="@string/clean_wallpaper" android:key="CLEAR" />
+    </PreferenceCategory>
+    <Preference android:title="@string/privacy_policy" android:key="PRIVACY_POLICY" />
+</PreferenceScreen>

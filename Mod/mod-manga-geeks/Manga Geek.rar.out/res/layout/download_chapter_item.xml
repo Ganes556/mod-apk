@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout android:id="@id/swipe" android:layout_width="fill_parent" android:layout_height="wrap_content" swipe:leftEdgeSwipeOffset="0.0dip" swipe:rightEdgeSwipeOffset="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:swipe="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/delete" android:tag="Bottom3" android:background="#ffff5534" android:layout_width="120.0dip" android:layout_height="wrap_content" android:weightSum="10.0">
+        <ImageView android:id="@id/trash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" swipe:srcCompat="@drawable/ic_delete_forever_24dp" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Delete" android:layout_weight="5.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/container" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black_87" android:ellipsize="end" android:id="@id/title" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="title" android:maxLines="1" android:layout_toLeftOf="@id/page" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/trans_light_black" android:id="@id/source" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="soure" android:maxLines="1" android:layout_below="@id/title" />
+        <ProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="64.0dip" android:layout_marginBottom="4.0dip" android:max="100" android:progress="50" android:indeterminate="false" android:progressDrawable="@drawable/download_progress" android:layout_toLeftOf="@id/page" android:layout_below="@id/source" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/page" android:background="@drawable/round_corner" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip" android:text="20／20" android:maxLines="2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

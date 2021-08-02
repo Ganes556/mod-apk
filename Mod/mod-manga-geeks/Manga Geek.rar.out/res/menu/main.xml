@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/action_search" android:title="Search" android:inputType="textCapWords" android:imeOptions="actionSearch" app:showAsAction="collapseActionView|ifRoom" />
+    <item android:icon="@drawable/ic_vip" android:id="@id/action_block_ad" android:title="VIP" app:showAsAction="collapseActionView|ifRoom" />
+    <item android:icon="@drawable/ic_settings" android:id="@id/setttings" android:title="@string/settings" app:showAsAction="never" />
+</menu>

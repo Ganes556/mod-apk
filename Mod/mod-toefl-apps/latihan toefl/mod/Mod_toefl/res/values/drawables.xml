@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="APKTOOL_DUMMY_1b">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_54">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_56">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_58">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_b2">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_b6">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_bb">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_bf">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_c4">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_c5">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_c6">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_e3">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_e4">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_e5">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_e6">false</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="APKTOOL_DUMMY_eb">false</item>
+</resources>

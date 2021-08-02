@@ -1,0 +1,2 @@
+di manifest
+android:isSplitRequired="true" 

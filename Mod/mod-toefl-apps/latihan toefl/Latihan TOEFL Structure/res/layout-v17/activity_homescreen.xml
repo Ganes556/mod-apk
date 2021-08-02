@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/viewflipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:layout_width="260.0dip" android:layout_height="42.0dip" android:src="@drawable/title" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_button_materi" android:background="@drawable/materi_button" android:clickable="true" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginRight="2.0dip" android:layout_marginEnd="2.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/materi_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="start|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="4.0dip" android:text="@string/belajar" android:layout_marginStart="10.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_button_statistik" android:background="@drawable/statistik_button" android:clickable="true" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_marginLeft="2.0dip" android:layout_marginStart="2.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/statistik_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="start|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="4.0dip" android:text="@string/statistik" android:layout_marginStart="10.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_button_test" android:background="@drawable/test_button" android:clickable="true" android:layout_width="260.0dip" android:layout_height="128.0dip" android:layout_marginBottom="3.0dip">
+                        <LinearLayout android:gravity="start|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="30.0">
+                            <TextView android:textSize="23.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/test" android:layout_marginStart="10.0dip" />
+                            <TextView android:textSize="10.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" android:text="Tap untuk memulai simulasi ujian TOEFL bagian structure." android:layout_marginStart="10.0dip" android:layout_marginEnd="5.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/test_icon" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_button_start" android:background="@drawable/start_button" android:clickable="true" android:layout_width="260.0dip" android:layout_height="128.0dip" android:layout_marginBottom="3.0dip">
+                    <LinearLayout android:gravity="start|bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="30.0">
+                        <TextView android:textSize="23.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Latihan" android:layout_marginStart="10.0dip" />
+                        <TextView android:textSize="10.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" android:text="Tap untuk mulai latihan mengerjakan soal. Pembahasan soal tersedia." />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                        <ImageView android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/start_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/putih" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/text_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff838383" android:id="@id/small_judul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:text="TOEFL" />
+                        <TextView android:textSize="30.0sp" android:textColor="#ff838383" android:id="@id/judul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="2.0dip" android:text="S T R U C T U R E" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ff838383" android:id="@id/sub_judul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="4.0dip" android:text="Road to Success" />
+                        <ImageView android:id="@id/imgSeparator2" android:background="#ffc5c5c5" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/iklan_paprika" android:background="@color/putih" android:layout_width="330.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/internet_on" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <FrameLayout android:id="@id/fl_adplaceholder" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/internet_off" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="wrap_content">
+                                <LinearLayout android:id="@id/layout_iklan_ps_random" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
+                                    <LinearLayout android:orientation="horizontal" android:id="@id/sub_container" android:layout_width="320.0dip" android:layout_height="90.0dip">
+                                        <LinearLayout android:orientation="vertical" android:id="@id/layout_kiri" android:layout_width="85.0dip" android:layout_height="fill_parent">
+                                            <TextView android:textSize="9.0sp" android:textColor="@color/putih" android:background="@color/garis_abu2" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text=" Ad " android:layout_marginStart="6.0dip" />
+                                            <ImageView android:layout_gravity="center" android:id="@id/icon_apps" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icon_structure" />
+                                        </LinearLayout>
+                                        <LinearLayout android:orientation="vertical" android:id="@id/layout_tengah" android:layout_width="165.0dip" android:layout_height="fill_parent">
+                                            <TextView android:textSize="15.0dip" android:textStyle="bold" android:gravity="bottom" android:id="@id/nama_apps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/lts" android:layout_weight="1.0" />
+                                            <TextView android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/studio" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip" android:text="@string/ps" android:layout_weight="1.0" />
+                                            <RatingBar android:theme="@style/RatingBar" android:id="@id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:numStars="5" android:rating="4.0" style="?android:ratingBarStyleSmall" />
+                                        </LinearLayout>
+                                        <LinearLayout android:orientation="vertical" android:id="@id/layout_kanan" android:layout_width="66.0dip" android:layout_height="fill_parent">
+                                            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                                            <LinearLayout android:id="@id/install_apps" android:background="@drawable/install_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                                                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/putih" android:gravity="center" android:id="@id/tv_install_apps" android:background="@drawable/install_button" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/install" android:layout_marginStart="0.0dip" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_button_materi" android:background="@drawable/materi_button" android:padding="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="0.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/materi_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="30.0">
+                            <TextView android:textSize="23.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Materi" />
+                            <TextView android:textSize="16.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Berisi materi-materi yang perlu dikuasai untuk TOEFL" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_button_latihan" android:background="@drawable/statistik_button" android:padding="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="4.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:id="@id/imageView1" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/test_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="30.0">
+                            <TextView android:textSize="23.0sp" android:textColor="#fffffeff" android:id="@id/header1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Latihan" />
+                            <TextView android:textSize="16.0sp" android:textColor="#fffffeff" android:id="@id/detail1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:text="Soal-soal berkenaan dengan topik materi tertentu" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/putih" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff838383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:text="TOEFL" />
+                        <TextView android:textSize="30.0sp" android:textColor="#ff838383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="2.0dip" android:text="SIMULATION TEST" />
+                        <TextView android:textSize="18.0sp" android:textColor="#ff838383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="4.0dip" android:text="Pilih salah satu dari mode test berikut" />
+                        <ImageView android:background="#ffc5c5c5" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                        <LinearLayout android:orientation="vertical" android:id="@id/layad" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_button_test_part_a" android:background="@drawable/materi_button" android:padding="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="0.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/test_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="30.0">
+                            <TextView android:textSize="23.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Part A" />
+                            <TextView android:textSize="16.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Soal-soal terkait 'structure and written expression'" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_button_test_part_b" android:background="@drawable/statistik_button" android:padding="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="4.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/test_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="30.0">
+                            <TextView android:textSize="23.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Part B" />
+                            <TextView android:textSize="16.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:text="Soal-soal berkenaan dengan 'incorrect word'" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_button_test_full" android:background="@drawable/start_button" android:padding="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="0.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="70.0">
+                            <ImageView android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/time_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="30.0">
+                            <TextView android:textSize="23.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FULL TEST" />
+                            <TextView android:textSize="16.0sp" android:textColor="#fffffeff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Simulasi ujian TOEFL bagian Structure (Part A + Part B)" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ViewFlipper>
+</RelativeLayout>

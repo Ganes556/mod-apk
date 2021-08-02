@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/coordinatorLayout" android:padding="16.0dip" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/leading_to_wallpaper_master" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/install" android:background="@drawable/plan_chose_button_bg_1" android:layout_width="270.0dip" android:layout_height="74.0dip" android:layout_margin="4.0dip">
+            <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Install Wallpaper Master" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/premium_plan" android:background="@drawable/plan_chose_button_bg_1" android:layout_width="270.0dip" android:layout_height="74.0dip" android:layout_margin="4.0dip">
+            <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Choose Premium Plan" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

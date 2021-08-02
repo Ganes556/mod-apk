@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/welcome_textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="20.0dip" android:text="Welcome to Flag Shop" android:fontFamily="sans-serif-condensed" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/wallet_textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="Your balance is : " android:shadowColor="#ffffffff" android:fontFamily="sans-serif-condensed" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

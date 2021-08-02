@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/nav_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/my_head" android:scaleType="centerCrop" />
+    <LinearLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:gravity="bottom" android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="@dimen/nav_header_height">
+        <LinearLayout android:layout_gravity="right" android:id="@id/premium_plan" android:background="@drawable/half_circle" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vip_solid" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/choose_premium_plan" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

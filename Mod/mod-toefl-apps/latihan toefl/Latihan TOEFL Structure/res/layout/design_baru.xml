@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffdfded9" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:background="#ffe9e8f5" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="55.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="25.0dip">
+                        <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff9998e3" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tx_score" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/Ring" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                        <RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ProgressBar android:id="@id/circularProgressBar" android:layout_width="220.0dip" android:layout_height="220.0dip" android:max="10" android:progress="8" android:indeterminate="false" android:progressDrawable="@drawable/progressbar_test_part_a" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+                            <TextView android:textSize="50.0sp" android:id="@id/total_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="330" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                            <TextView android:textSize="12.0sp" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Max = 40" android:layout_below="@id/total_score" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="25.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/benar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="30.0sp" android:id="@id/tv_benar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" />
+                            <TextView android:textSize="12.0sp" android:id="@id/tv_angka_benar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/tx_benar" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/salah" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="30.0sp" android:id="@id/tv_salah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" />
+                            <TextView android:textSize="12.0sp" android:id="@id/tv_angka_salah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/tx_salah" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lewat" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="30.0sp" android:id="@id/tv_lewat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+                            <TextView android:textSize="12.0sp" android:id="@id/tv_angka_lewat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/tx_lewat" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/putih" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/layad_score" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="0.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_button_details" android:background="@drawable/see_details_a_button" android:clickable="true" android:layout_width="0.0dip" android:layout_height="55.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ff7776df" android:id="@id/tv_button_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tx_details" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

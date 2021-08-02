@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="?listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RadioButton android:gravity="center" android:id="@id/all" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:checked="true" android:text="All" />
+        <RadioButton android:id="@id/completed" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:checked="false" android:text="Completed" />
+        <RadioButton android:id="@id/on_going" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:checked="false" android:text="On Going" />
+    </RadioGroup>
+</LinearLayout>

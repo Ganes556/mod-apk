@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/fire" android:id="@id/hot" android:title="@string/Hot" />
+        <item android:icon="@drawable/ic_latest_updates" android:id="@id/latest_updates" android:visible="false" android:title="@string/latest_updates" />
+        <item android:icon="@drawable/ic_all" android:id="@id/all" android:title="@string/all" />
+        <item android:icon="@drawable/ic_category" android:id="@id/category" android:title="@string/Category" />
+        <item android:icon="@drawable/ic_history" android:id="@id/history" android:title="@string/history" />
+        <item android:icon="@drawable/ic_star" android:id="@id/favorite" android:title="@string/favourites" />
+        <item android:icon="@drawable/ic_save_light" android:id="@id/download" android:title="@string/menu_download" />
+        <item android:icon="@drawable/ic_wallpaper" android:id="@id/wallpaper" android:title="Live Wallpaper" />
+    </group>
+    <item android:title="@string/menu_others">
+        <menu>
+            <item android:icon="@drawable/ic_share" android:id="@id/nav_share" android:title="@string/menu_share" />
+            <item android:icon="@drawable/ic_settings" android:id="@id/setttings" android:title="@string/settings" />
+            <item android:icon="@drawable/ic_storage" android:id="@id/account" android:title="@string/backup" />
+            <item android:icon="@drawable/ic_facebook" android:id="@id/facebook" android:title="@string/like_our_facebook_page" />
+        </menu>
+    </item>
+</menu>

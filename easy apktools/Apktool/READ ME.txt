@@ -1,0 +1,6 @@
+Here you can manually place latest version or custom version of apktool.
+Please note that APK Easy Tool may not support older versions of apktool because the commands might be different
+
+Download: https://ibotpeaches.github.io/Apktool/
+
+Issues: https://github.com/iBotPeaches/Apktool/issues

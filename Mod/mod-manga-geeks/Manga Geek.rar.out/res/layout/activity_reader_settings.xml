@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black_15" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="480.0dip" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/black_87" android:layout_gravity="center_vertical" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="Reading direction" />
+        <androidx.appcompat.widget.AppCompatSpinner android:theme="@style/common_spinner" android:entries="@array/reading_direction_entries" android:layout_gravity="center_vertical" android:id="@id/spinner_direction" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="480.0dip" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/black_87" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/rotation" />
+        <androidx.appcompat.widget.AppCompatSpinner android:theme="@style/common_spinner" android:entries="@array/screen_rotation_entries" android:layout_gravity="center_vertical" android:id="@id/spinner_rotation" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="480.0dip" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.SwitchCompat android:textColor="@color/black_87" android:id="@id/switch_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:checked="false" android:text="@string/use_custom_brightness" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="480.0dip" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/black_87" android:id="@id/brightness_value" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/brightness" />
+        <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center_vertical" android:id="@id/seekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="5" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_gravity="right" android:id="@id/confirm" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/confirm" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_report" android:id="@id/report_group" android:orderInCategory="100" android:title="@string/report" app:showAsAction="always">
+        <menu>
+            <item android:id="@id/adult_contents" android:title="It's sexually inappropriate" />
+            <item android:id="@id/prohibited_contents" android:title="It's violent or prohibited content" />
+            <item android:id="@id/offensive" android:title="It's offensive" />
+            <item android:id="@id/unavailable" android:title="Unavailable" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_favorite_border" android:id="@id/favorite" android:orderInCategory="100" android:title="@string/favourites" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_download" android:id="@id/download" android:orderInCategory="100" android:title="@string/download" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_swap_vert_24dp" android:id="@id/sort" android:orderInCategory="100" android:title="@string/sort" app:showAsAction="always" />
+</menu>

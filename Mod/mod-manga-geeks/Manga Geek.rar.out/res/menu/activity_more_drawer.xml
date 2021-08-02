@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@id/history" android:title="@string/history" android:checkable="true" />
+        <item android:id="@id/favorite" android:title="@string/favourites" />
+        <item android:id="@id/download" android:title="@string/menu_download" />
+    </group>
+    <item android:title="@string/menu_others">
+        <menu>
+            <item android:id="@id/setttings" android:title="@string/settings" />
+            <item android:id="@id/account" android:title="@string/backup" />
+            <item android:id="@id/facebook" android:title="@string/like_our_facebook_page" />
+            <item android:id="@id/nav_share" android:title="@string/menu_share" />
+            <item android:id="@id/visit" android:title="@string/visit_our_website" />
+        </menu>
+    </item>
+</menu>
